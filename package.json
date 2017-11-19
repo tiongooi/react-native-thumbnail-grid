@@ -1,0 +1,83 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "react-native-thumbnail-grid@^0.2.2",
+        "scope": null,
+        "escapedName": "react-native-thumbnail-grid",
+        "name": "react-native-thumbnail-grid",
+        "rawSpec": "^0.2.2",
+        "spec": ">=0.2.2 <0.3.0",
+        "type": "range"
+      },
+      "/Users/TiongShun/Desktop/Local/projects/plantrepository-native"
+    ]
+  ],
+  "_from": "react-native-thumbnail-grid@>=0.2.2 <0.3.0",
+  "_id": "react-native-thumbnail-grid@0.2.2",
+  "_inCache": true,
+  "_location": "/react-native-thumbnail-grid",
+  "_nodeVersion": "8.4.0",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/react-native-thumbnail-grid-0.2.2.tgz_1509431353108_0.10776301682926714"
+  },
+  "_npmUser": {
+    "name": "luongnd",
+    "email": "duyluonglc@gmail.com"
+  },
+  "_npmVersion": "5.3.0",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "react-native-thumbnail-grid@^0.2.2",
+    "scope": null,
+    "escapedName": "react-native-thumbnail-grid",
+    "name": "react-native-thumbnail-grid",
+    "rawSpec": "^0.2.2",
+    "spec": ">=0.2.2 <0.3.0",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/react-native-thumbnail-grid/-/react-native-thumbnail-grid-0.2.2.tgz",
+  "_shasum": "949ec341eec69d7b3a72408b0a71768075610df6",
+  "_shrinkwrap": null,
+  "_spec": "react-native-thumbnail-grid@^0.2.2",
+  "_where": "/Users/TiongShun/Desktop/Local/projects/plantrepository-native",
+  "author": {
+    "name": "Duy Luong"
+  },
+  "dependencies": {
+    "react-native-image-placeholder": "1.0.13"
+  },
+  "description": "The photo thumbnail grid",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "integrity": "sha512-2CMPxu86nHzZNOU9ZDqta6ZUwVMExUDMsOxnFax4ga5wwezQ2oQneTlPEGk7LMAOc4yZU5y43XoVXCFxH5fRhQ==",
+    "shasum": "949ec341eec69d7b3a72408b0a71768075610df6",
+    "tarball": "https://registry.npmjs.org/react-native-thumbnail-grid/-/react-native-thumbnail-grid-0.2.2.tgz"
+  },
+  "gitHead": "168065b177c42028b6d1dde96300c1ebdc5f94be",
+  "keywords": [
+    "photo",
+    "grid"
+  ],
+  "license": "MIT",
+  "main": "PhotoGrid.js",
+  "maintainers": [
+    {
+      "name": "luongnd",
+      "email": "duyluonglc@gmail.com"
+    }
+  ],
+  "name": "react-native-thumbnail-grid",
+  "optionalDependencies": {},
+  "readme": "# React Native Photo Grid\r\n<p align=\"center\">\r\n  <img src=\"https://github.com/duyluonglc/react-native-photo-grid/blob/master/grid.gif?raw=true\" width=200/>\r\n</p>\r\n\r\nCode:\r\n\r\n```js\r\nconst images = [\r\n  'https://cdn.pixabay.com/photo/2017/06/09/09/39/adler-2386314_960_720.jpg',\r\n  'https://cdn.pixabay.com/photo/2017/06/02/18/24/fruit-2367029_960_720.jpg',\r\n  'https://cdn.pixabay.com/photo/2016/08/12/22/34/apple-1589869_960_720.jpg'\r\n]\r\n...\r\n<PhotoGrid source={images} onPressImage={uri => this.showImage(uri)} />\r\n\r\n```\r\n\r\n## Custom Image source object\r\n\r\nThe `source` prop also accepts an Array of source objects like so:\r\n\r\n```js\r\nconst images = [\r\n  {\r\n    uri: 'https://cdn.pixabay.com/photo/2017/06/09/09/39/adler-2386314_960_720.jpg',\r\n    headers: {\r\n      Authorization: 'Bearer xyz'\r\n    }\r\n  },\r\n  {\r\n    uri: 'https://cdn.pixabay.com/photo/2017/06/02/18/24/fruit-2367029_960_720.jpg',\r\n    headers: {\r\n      Authorization: 'Bearer xyz'\r\n    }\r\n  },\r\n  {\r\n    uri: 'https://cdn.pixabay.com/photo/2016/08/12/22/34/apple-1589869_960_720.jpg'\r\n    headers: {\r\n      Authorization: 'Bearer xyz'\r\n    }\r\n  }\r\n]\r\n...\r\n<PhotoGrid source={images} onPressImage={source => this.showImage(source.uri)} />\r\n```\r\n\r\n# Props\r\n\r\nProperty | Type | Description\r\n------------ | ------------- | -------------\r\nsource | PropTypes.array | Array containing Image uri string or source object\r\nwidth | PropTypes.number | Container width\r\nheight | PropTypes.number | Container height\r\nratio | PropTypes.float | Split screen ratio\r\nstyle | PropTypes.object | Container styles\r\nimageStyle | PropTypes.object | Image styles\r\nimageProps | PropTypes.object | Image props\r\nonPressImage | PropTypes.func | Callback when press image\r\n\r\n# Image props\r\nProperty | Description\r\n------------ | -------------\r\nplaceholderSource\t| Show placeholderSource if the source can't be loaded or error.\r\nloadingStyle | Style ActivityIndicator {size: 'small'; color: 'gray'}\r\nisShowActivity | Show ActivityIndicator loading\r\nplaceholderStyle | Style placeholder image",
+  "readmeFilename": "readme.md",
+  "scripts": {
+    "test": "echo \"No test specified\" && exit 0"
+  },
+  "version": "0.2.2"
+}
